@@ -53,12 +53,14 @@ function AuthProvider({ children }) {
           removeToken();
           setIsLoading(false);
           setUser(null);
+          navigate('/')
         });
     } else {
       // If the token is not available (or is removed)
       removeToken();
       setIsLoading(false);
       setUser(null);
+      navigate('/')
     }
   };
 
